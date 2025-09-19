@@ -29,6 +29,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run unit tests
-        run: PYTHONPATH=. python -m pytest tests/test_math_utils.py -v
+        run: PYTHONPATH=. python -m pytest tests -v
       - name: Run integration tests
         run: PYTHONPATH=. python -m pytest tests/test_app_integration.py -v
